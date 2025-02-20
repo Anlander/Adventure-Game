@@ -20,10 +20,23 @@ bool playerTurn = false;
 int monsterHealth = 10;
 int playerHealth = 10;
 
+static void WaitToEnter()
+{
+	Console.ForegroundColor = ConsoleColor.Green;
+	Console.WriteLine("\nPress enter to continue..");
+	Console.ResetColor();
+}
+
+static void StoryTeller(string storyTeller)
+{
+	Console.ForegroundColor = ConsoleColor.Magenta;
+	Console.WriteLine(storyTeller);
+	Console.ResetColor();
+}
 
 
 
-Console.Write("Hello Adventure, welcome to our game!\nWho is the hero I speak to?: ");
+Console.Write("Hello Adventure, welcome to this shitty game\nWho is the hero I speak to?: ");
 
 playerName = Console.ReadLine();
 
@@ -33,8 +46,8 @@ while (String.IsNullOrEmpty(playerName))
 	playerName = Console.ReadLine();
 }
 
-
-Console.WriteLine("What class are you playing? \n 1: Warrior \n 2: Archer\n 3: Wizard");
+StoryTeller("What class are you playing?");
+Console.WriteLine("1: Warrior \n2: Archer\n3: Wizard");
 
 
 var classChoice = Console.ReadKey(intercept: true).Key;
@@ -54,22 +67,31 @@ if (classChoice == ConsoleKey.D1)
 else if (classChoice == ConsoleKey.D3)
 	playerClass = "Wizard";
 
+Console.WriteLine();
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.WriteLine($"{playerName} the great {playerClass.ToLower()}");
+Console.ResetColor();
+Console.WriteLine("I WELCOME YOU!." +
+$"\nI will now take you on a journey that you probably will finish in less than 1 minute");
 
-Console.WriteLine($"Welcome to our adventure game, {playerName} the great {playerClass.ToLower()}," +
-$"\nNow we will take you on a journey were you will probably finish it in less than 5 minutes");
-
-Console.WriteLine("\nPress enter to continue..");
+WaitToEnter();
 Console.ReadLine();
 
-Console.WriteLine("\nAs you wander through the forest, the trees tower above you, their branches thick with leaves," +
+
+StoryTeller("\nAs you wander through the forest, the trees tower above you, their branches thick with leaves," +
 	"\ncasting long shadows on the ground. The air is cool and crisp, and the distant sound of rustling leaves fills the silence." +
 	"\nThe path ahead seems endless, winding between ancient oaks and small streams.");
 
-Console.WriteLine("\nPress enter to continue..");
+WaitToEnter();
 Console.ReadLine();
 
-Console.WriteLine("Suddenly, you hear a noise behind you, a rustling in the bushes. " +
+
+StoryTeller("Suddenly, you hear a noise behind you, a rustling in the bushes. " +
 	"\nYour heart races as you turn, a big monster appears...");
+
+Console.ResetColor();
+
+WaitToEnter();
 
 Console.WriteLine("\n1: Fight\n2: Flee");
 
@@ -99,12 +121,13 @@ Console.WriteLine("\nGreat!, You choose to fight..");
 
 
 
-Console.WriteLine("\nPress enter to continue..");
+WaitToEnter();
 Console.ReadLine();
-
+Console.ForegroundColor = ConsoleColor.Red;
 Console.WriteLine("The monster appears!");
+Console.ResetColor();
 Console.WriteLine();
-
+Console.ForegroundColor = ConsoleColor.Magenta;
 Console.WriteLine("         /\\______  __");
 Console.WriteLine("        /-~     ,^~ / __ You're DEAD son!");
 Console.WriteLine("       / ,---x /_.-'L/__,\\");
@@ -119,10 +142,10 @@ Console.WriteLine("    \\/   v~ ,-^x.____}--r |");
 Console.WriteLine("        / /\"            | |");
 Console.WriteLine("      _/_/              !_l_");
 Console.WriteLine("    o~_//)             (_\\\\_~o");
-
+Console.ResetColor();
 Console.WriteLine();
 
-Console.WriteLine("\nPress enter to continue..");
+WaitToEnter();
 Console.ReadLine();
 
 Console.WriteLine("The fight starts..");
@@ -193,6 +216,7 @@ while (playerHealth >= 0 && monsterHealth >= 0)
 		Console.WriteLine("\nYou've been destroyed.");
 		Console.WriteLine("\nGAME OVER!.");
 		Console.ResetColor();
+		break;
 	}
 }
 

@@ -13,3 +13,4 @@ C:\Users\fille\source\repos\Adventure Game\Adventure Game\obj\Release\net8.0\Adv
 C:\Users\fille\source\repos\Adventure Game\Adventure Game\obj\Release\net8.0\Adventure Game.genruntimeconfig.cache
 C:\Users\fille\source\repos\Adventure Game\Adventure Game\obj\Release\net8.0\ref\Adventure Game.dll
 C:\Users\fille\source\repos\Adventure Game\Adventure Game\bin\Release\net8.0\Settings.job
+C:\Users\fille\source\repos\Adventure Game\Adventure Game\obj\Release\net8.0\Adventure Game.sourcelink.json
