@@ -1,0 +1,6 @@
+C:\Users\fille\source\repos\Adventure Game\Adventure Game\obj\Release\net8.0\PubTmp\Out\app_data\Jobs\Triggered\Adventure Game\Settings.job
+C:\Users\fille\source\repos\Adventure Game\Adventure Game\obj\Release\net8.0\PubTmp\Out\app_data\Jobs\Triggered\Adventure Game\Adventure Game.exe
+C:\Users\fille\source\repos\Adventure Game\Adventure Game\obj\Release\net8.0\PubTmp\Out\app_data\Jobs\Triggered\Adventure Game\Adventure Game.dll
+C:\Users\fille\source\repos\Adventure Game\Adventure Game\obj\Release\net8.0\PubTmp\Out\app_data\Jobs\Triggered\Adventure Game\Adventure Game.deps.json
+C:\Users\fille\source\repos\Adventure Game\Adventure Game\obj\Release\net8.0\PubTmp\Out\app_data\Jobs\Triggered\Adventure Game\Adventure Game.runtimeconfig.json
+C:\Users\fille\source\repos\Adventure Game\Adventure Game\obj\Release\net8.0\PubTmp\Out\app_data\Jobs\Triggered\Adventure Game\Adventure Game.pdb
